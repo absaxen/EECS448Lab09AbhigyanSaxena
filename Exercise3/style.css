@@ -1,0 +1,119 @@
+h1{
+    text-align: center;
+    color: rgb(116, 206, 13);
+}
+
+h3{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    font-size : 30px;
+    
+}
+
+
+#container{
+    width:900px;
+    height:300px;
+    border:1px solid black;
+    margin : 0 auto
+  }
+
+  .content{
+    width:300px;
+      /* margin: 0 auto; */
+  }
+  
+.content{
+    width:1200px;
+    text-align: center;
+    margin:  auto;
+
+  }
+  .content div{
+    width:300px;
+    height:200px;
+    float:left;
+    
+
+  }
+  /* .milk{
+    background-color:red;
+  }
+  .beef{
+    background-color:green;
+  }
+  .apple{
+    background-color:blue; */
+  /* } */
+/* 
+  .image01{
+    width:100px;
+    height:100px;
+  } */
+
+  .image01, .image02, .image03{
+    width:300px;
+    height:200px;
+  }
+
+
+  .content div .price01{
+    width:300px;
+    height:25px;
+  }
+
+  .content div .price02{
+    width:300px;
+    height:25px;
+  }
+
+  .content div .price03{
+    width:300px;
+    height:25px;
+  }
+
+  .content div .Qunantity_DIV01{
+    width:300px;
+    height:25px;
+    margin :10px auto;
+  }
+
+  .content div .Qunantity_DIV02{
+    width:300px;
+    height:25px;
+    margin :10px auto;
+  }
+
+  .content div .Qunantity_DIV03{
+    width:300px;
+    height:25px;
+    margin :10px auto;
+  }
+
+ #container1{
+   width: 900px;
+   height: 600px;
+   background-color: rgb(0, 247, 255);
+   margin: 10px auto;
+ }
+
+
+ .diliveryChoice{
+
+   text-align: center;
+   background-color: grey;
+ }
+
+ li{
+   margin:10px auto;
+ }
+ 
+ .Userlog{
+   text-align: center;
+   margin: 10px auto;
+   height :300px;
+   width :300px;
+ }

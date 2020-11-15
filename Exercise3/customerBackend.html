@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 Store</title>
+</head>
+
+<body>
+<table border="1"
+<?php
+    $password = $_POST['password_php'];
+    $username = $_POST['username_php'];
+
+    $itme01_Quantity = $_POST['itme01_Quantity'];
+    $itme02_Quantity = $_POST['itme02_Quantity'];
+    $itme03_Quantity = $_POST['itme03_Quantity'];
+
+    $ship_method = $_POST['choice'];
+
+
+    $itme01_Price = 5;
+    $itme02_Price = 10;
+    $itme03_Price = 2;
+
+    echo "Welcome to the Store<br>";
+    echo "Here is your username:" . $username . "<br>";
+    echo "Here is your password:" . $password . "<br>";
+    echo "The invoice:<br>"
+?>
+	<?php for($i = 0; $i <= 5; $i++){ ?>
+		<tr>
+			<?php for($j = 0; $j <= 3; $j++){?>
+				<td id = >
+					<?php 
+						if($i == 0 && $j == 0){
+						    
+						}
+						else if($i == 0 && $j == 1){
+						    echo("Quantity");
+                        }
+                        else if($i == 0 && $j == 2){
+						    echo("Cost Per Item");
+                        }
+                        else if($i == 0 && $j == 3){
+						    echo("Sub Total");
+						}
+						else if($i == 1 && $j == 0){
+						    echo("item1");
+                        }
+                        else if($i == 2 && $j == 0){
+						    echo("item2");
+                        }
+                        else if($i == 3 && $j == 0){
+						    echo("item3");
+                        }
+                        else if($i == 4 && $j == 0){
+						    echo("Shipping");
+                        }
+                        else if($i == 5 && $j == 0){
+						    echo("Total Cost");
+                        }
+                        
+                        else if( $i == 1 && $j == 1){
+                            echo($itme01_Quantity);
+                        }
+                        else if( $i == 2 && $j == 1){
+                            echo($itme02_Quantity);
+                        }
+                        else if( $i == 3 && $j == 1){
+                            echo($itme03_Quantity);
+                        }
+
+                        else if( $i == 1 && $j ==2){
+                            echo("$" . $itme01_Price);
+                        }
+                        else if( $i == 2 && $j ==2){
+                            echo("$" . $itme02_Price);
+                        }
+                        else if( $i == 3 && $j ==2){
+                            echo("$" . $itme03_Price);
+                        }
+
+                        else if( $i == 1 && $j ==3){
+                            echo("$" . $itme01_Price*$itme01_Quantity);
+                        }
+                        else if( $i == 2 && $j ==3){
+                            echo("$" . $itme02_Price*$itme02_Quantity);
+                        }
+                        else if( $i == 3 && $j ==3){
+                            echo("$" . $itme03_Price*$itme03_Quantity);
+                        }
+
+                        else if( $i == 4 && $j == 1){
+                            echo($ship_method);
+                        }
+                        
+                        else if( $i == 4 && $j == 2){
+                            echo("EMPTY");
+                        }
+
+                        else if( $i == 4 && $j == 3){
+                            if($ship_method == "Express"){
+                                echo("$0");
+                            }
+                            else if($ship_method == "sky"){
+                                echo("$50");
+                            }
+                            else if($ship_method == "train"){
+                                echo("$5");
+                            }
+                        }
+                        
+                        else if( $i == 5 && $j == 1){
+                            echo("EMPTY");
+                        }
+                        else if( $i == 5 && $j == 2){
+                            echo("EMPTY");
+                        }
+                        else if( $i == 5 && $j == 3){
+                            if($ship_method == "Express") {$ship_priace = 0;}
+                            if($ship_method == "sky") {$ship_priace = 50;}
+                            if($ship_method == "train") {$ship_priace = 5;}
+                            echo("$" . (                            $itme01_Price*$itme01_Quantity +
+                            $itme02_Price*$itme02_Quantity +
+                            $itme03_Price*$itme03_Quantity + 
+                            $ship_priace));
+                        }       
+					 ?>
+				</td>
+			<?php } ?>
+		</tr>
+	<?php } ?>
+</table>
+
+</body>
+
+</html>

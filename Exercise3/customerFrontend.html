@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customerFrontend</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <form action="customerBackend.php" method="POST" id="form_Sumbit" onSubmit=" return check()">
+        <h1>Welcome to the Grocery Store!</h1>
+        <h3>Items in the store today are:</h3>
+
+        <div id="container">
+            <div class="content">
+                <div class="fish">
+                    fish
+
+                    <div class="imageMilk">
+                        <img src="01.jpg" class="image01">
+                    </div>
+
+                    <div class="price01">
+                        price = 5$
+                    </div>
+
+                    <div class="Qunantity_DIV01">
+                        <label for="name">Quantity:</label>
+                        <input type="number" id="Quantity01" value="0" name="itme01_Quantity">
+                    </div>
+                </div>
+
+                <div class="bread">
+                    bread
+                    <div class="imageBeef">
+                        <img src="02.jpg" class="image02">
+                    </div>
+
+                    <div class="price02">
+                        price = 9$
+                    </div>
+
+                    <div class="Qunantity_DIV02">
+                        <label for="name">Quantity:</label>
+                        <input type="number" class="Quantity02" value="0" name="itme02_Quantity">
+                    </div>
+
+
+                </div>
+
+                <div class="egg">
+                    egg
+                    <div class="imageApple">
+                        <img src="03.jpg" class="image03">
+                    </div>
+
+                    <div class="price03">
+                        price = 2$
+                    </div>
+
+                    <div class="Qunantity_DIV03">
+                        <label for="name">Quantity:</label>
+                        <input type="number" class="Quantity03" value="0" name="itme03_Quantity">
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="container1">
+            <h1> Delivery </h1>
+            <div class="diliveryChoice">
+                <li> <input name="choice" type="radio" value="Express"> Free 7 day Shipping </li>
+                <li> <input name="choice" type="radio" value="sky"> $50.00 over night Shipping </li>
+                <li> <input name="choice" type="radio" value="train"> $5.00 three day Shipping  </li>
+            </div>
+
+            <h1> Customer Login </h1>
+            <div class="Userlog">
+                <label for="name">Email address:</label>
+                <input type="text" class="UserName" name="username_php">
+                <br>
+                <label for="name">Password:</label>
+                <input type="password" class="Password" name="password_php">
+                <br>
+                <input type="reset" value="reset" id="reset">
+                <input type="submit" value="submit details" id="submit details">
+            </div>
+        </div>
+    </form>
+
+
+</body>
+
+<script src="formChecker.js"></script>
+
+</html>
